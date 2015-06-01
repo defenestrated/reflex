@@ -17,15 +17,20 @@
 
     <div class='top-menu'>
       <div class='logo'>reflex</div>
+      <!-- ^^ that'll be replaced by the real logo once there is one -->
       <div class='global-manipulations'>
         <span class='username'>samgalison</span> (<a href="" class='signout'>sign out</a>)&nbsp;&nbsp;|&nbsp;&nbsp;<a href="">settings</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="">help</a>
       </div>
     </div>
+
     <div class='side-menu-wrapper'>
+      <!-- needs a wrapper to get a full-height vertical right border -->
       <ul class='side-menu'>
         <li class="side-item active">
           primary views
         </li>
+
+        <!-- i know this is wrong (should be inside the topmost li), didn't have time to fix + debug it, please don't hate me! =) -->
         <ul class='sub-menu'>
           <li><span class="label">costing view</span></li>
           <li><span class="label">sales by demographic</span></li>
@@ -34,6 +39,7 @@
           <li><span class="label">product churn</span></li>
           <li><span class="label">monthly profit</span></li>
         </ul>
+
         <li class="side-item">
           templates / blueprints
         </li>
