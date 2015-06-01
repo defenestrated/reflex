@@ -1,0 +1,177 @@
+/* add local spec styles here */
+
+body {
+    width: 100%;
+    margin: 0;
+    font-family: "HelveNeue";
+}
+
+p, h1, h2, h3, h4, div, ul {
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+
+    list-style-type: none;
+    -webkit-padding-start: 0px;
+}
+
+a {
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    font-weight: 600;
+}
+
+.top-menu {
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    border-bottom: 4px solid black;
+
+    font-weight: 300;
+    font-size: 12px;
+    text-align: right;
+
+    letter-spacing: .14em;
+}
+
+.top-menu a:hover {
+    letter-spacing: .1em;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 30px;
+    padding: 10px 30px;
+    position: absolute;
+}
+
+.global-manipulations {
+    padding: 25px 30px;
+    text-transform: uppercase;
+}
+
+.username {
+    font-weight: 600;
+    letter-spacing: .075em
+}
+
+.side-menu-wrapper {
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    border-right: 5px solid black;
+}
+
+
+.side-menu ul, li {
+    list-style: none;
+    padding-left: 0;
+}
+
+.side-menu li {
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: .075em;
+    text-transform: uppercase;
+    line-height: 50px;
+    padding-left: 30px;
+    border-bottom: 1px solid black;
+    color: #000;
+}
+
+.side-menu li.active {
+    color: #000;
+    border-bottom: 1px solid #eee;
+}
+
+.side-menu li:hover {
+    background: #f5f5f5;
+}
+
+.sub-menu li {
+    cursor:pointer;
+    position: relative;
+    font-weight: 300;
+    font-size: 11px;
+    letter-spacing: .14em;
+    color: #666;
+    text-transform: uppercase;
+    line-height: 40px;
+}
+
+.sub-menu li .label {
+    padding: 0 40px 0 10px;
+}
+
+.sub-menu li:hover {
+    background: #f5f5f5;
+}
+
+.sub-menu li:hover:after {
+    position:absolute;
+    right: 0px;
+    height: 100%;
+    width: 20px;
+    background: #46beff;
+    content: "";
+}
+
+.view-manipulators {
+    position: absolute;
+    right: 0px;
+    height:100%;
+    padding: 0 30px;
+    background: #46beff;
+    display: inline-block;
+    opacity: 0;
+    color:white;
+}
+
+.glyphicons-half {
+     letter-spacing: 1em;
+}
+.glyphicons-half:last-child {
+     letter-spacing: 0em;
+}
+
+.glyphicons-half:hover {
+     color: black;
+}
+
+.glr-config:before {
+    content: "\e281";
+}
+.glr-duplicate:before {
+    content: "\e155";
+}
+.glr-trash:before {
+    content: "\e017";
+}
+.glr-export:before {
+    content: "\e390";
+}
+.glr-pin:before {
+    content: "\1f4cc";
+}
+
+.glh-config:before {
+    content: "\1f527";
+}
+.glh-duplicate:before {
+    content: "\e022";
+}
+.glh-trash:before {
+    content: "\e020";
+}
+.glh-export:before {
+    content: "\e164";
+}
+.glh-pin:before {
+    content: "\1f4cc";
+}
