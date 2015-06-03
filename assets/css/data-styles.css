@@ -1,0 +1,70 @@
+/* styles for a basic data view */
+
+.side-menu-wrapper {
+    background: #46beff;
+    width: 40px;
+    cursor: pointer;
+    height: 100%;
+}
+
+.top-menu {
+    height: 30px;
+}
+
+.global-manipulations-collapsed {
+    padding: 0 10px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.logo-collapsed {
+    font-weight: 600;
+    font-size: 20px;
+    padding: 0px 10px;
+    position: absolute;
+    line-height: 30px;
+}
+
+.menu {
+    position: relative;
+}
+
+.menu-icon, .menu-icon-hover, .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.menu-icon {
+    z-index: 1;
+}
+
+.menu-icon-hover {
+    z-index: 2;
+    opacity: 0;
+}
+
+.close {
+    opacity: 0;
+}
+
+.menu-explanation {
+    position: absolute;
+    width: 300px;
+    top: 340px;
+    line-height: 40px;
+
+    opacity: 0;
+
+    text-align: right;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: .2em;
+    color: white;
+
+    /* background: rgba(255,255,255,0.3); */
+
+    transform-origin: 20px 20px;
+    transform: rotate(-90deg);
+}

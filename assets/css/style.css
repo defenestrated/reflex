@@ -4,11 +4,15 @@ note: font face rules are in a separate css sheet
 
 */
 
+html, body {
+    height: 100%;
+}
+
 body {
     width: 100%;
     margin: 0;
     font-family: "HelveNeue";
-    /* this is a weird name to force the browser out of using whatever it thinks is helvetica */
+/* this is a weird name to force the browser out of using whatever it thinks is helvetica */
 }
 
 p, h1, h2, h3, h4, div, ul {
@@ -19,7 +23,7 @@ p, h1, h2, h3, h4, div, ul {
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
 
-    list-style-type: none;
+    /* list-style-type: none; */
     -webkit-padding-start: 0px;
 }
 
@@ -33,6 +37,12 @@ a:hover {
     font-weight: 600;
 }
 
+.content {
+    margin-left: 305px;
+    padding: 30px;
+    max-width: 800px;
+}
+
 .top-menu {
     top: 0;
     left: 0;
@@ -41,7 +51,7 @@ a:hover {
     border-bottom: 4px solid black;
 
     font-weight: 300;
-    font-size: 12px;
+    font-size: 11px;
     text-align: right;
 
     letter-spacing: .14em;
@@ -49,8 +59,8 @@ a:hover {
 
 .top-menu a:hover {
     letter-spacing: .1em;
-    /* ^^ that's so that words don't move around when
-       the links boldify (and also for typographic reasons) */
+/* ^^ that's so that words don't move around when
+   the links boldify (and also for typographic reasons) */
 }
 
 .logo {
@@ -73,9 +83,10 @@ a:hover {
 
 .side-menu-wrapper {
     /* to get a full-height right black border */
-    position: absolute;
+    position: relative;
     width: 300px;
     height: 100%;
+    float: left;
     border-right: 5px solid black;
 }
 
@@ -152,29 +163,29 @@ a:hover {
 }
 
 .glyphicons-half {
-     letter-spacing: 1em;
+    letter-spacing: 1em;
 }
 .glyphicons-half:last-child {
-     letter-spacing: 0em;
+    letter-spacing: 0em;
 }
 
 .glyphicons-half:hover {
-     color: black;
+    color: black;
 }
 
 /*
-probably you can ignore the rest of this,
-since it'll be coming from bootstrap.
-i wanted to write my own classes for these so we
-could swap out for full glyphicons (not halflings)
-if we want to. and because bootstrap is the devil and i didn't
-want to deal with killing all its styles.
-the only real advantage of using not-halflings
-is that there's no good "duplicate" icon in the
-halflings set. we should definitely find a way to incorporate
-text labels / tooltips for what each icon is also,
-to get rid of any ambiguity.
-*/
+  probably you can ignore the rest of this,
+  since it'll be coming from bootstrap.
+  i wanted to write my own classes for these so we
+  could swap out for full glyphicons (not halflings)
+  if we want to. and because bootstrap is the devil and i didn't
+  want to deal with killing all its styles.
+  the only real advantage of using not-halflings
+  is that there's no good "duplicate" icon in the
+  halflings set. we should definitely find a way to incorporate
+  text labels / tooltips for what each icon is also,
+  to get rid of any ambiguity.
+  */
 
 
 .glr-config:before {
