@@ -30,7 +30,7 @@
 .data-switch .button.active {
     background: rgba(0,0,0,0.1);
     font-weight: 600;
-    letter-spacing: 0.07em;
+    letter-spacing: 0.085em;
 }
 
 .data-switch .button:hover {
