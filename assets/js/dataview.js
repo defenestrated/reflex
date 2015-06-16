@@ -45,6 +45,9 @@ $(document).ready(function() {
     $(".close-hover, .close-nonhover").mouseleave(function(e) {
         if (open) xblack(e);
     });
+
+    $(".data-switch .button").click(switcher);
+
 });
 
 function highlight_column(e) {
@@ -192,4 +195,9 @@ function toggleopen(e) {
 
     if (debug) console.log("open: " + open);
 
+}
+
+function switcher(e) {
+    $(".data-switch .button").removeClass("active");
+    $(this).addClass("active");
 }

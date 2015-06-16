@@ -12,6 +12,46 @@
     height: 30px;
 }
 
+.data-switch {
+    border-bottom: none;
+    background-color: #f5f5f5;
+    text-align: center;
+    line-height: 30px;
+    padding-left: 45px;
+    font-weight: 300;
+}
+
+.data-switch .button {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.data-switch .button.active {
+    background: rgba(0,0,0,0.1);
+    font-weight: 600;
+    letter-spacing: 0.07em;
+}
+
+.data-switch .button:hover {
+    background: #46beff;
+}
+
+.data-switch .button.active:hover {
+    background: rgba(0,0,0,0.2);
+}
+.data-switch .button:active, .data-switch .button.active:active {
+    background: rgba(0,0,0,0.4);
+}
+
+/* .data-switch .button:after { */
+/*     content: "\00a0|\00a0"; */
+/* } */
+
+/* .data-switch .button:last-child:after { */
+/*     content: ""; */
+/* } */
+
 .global-manipulations-collapsed {
     padding: 0 10px;
     line-height: 30px;
